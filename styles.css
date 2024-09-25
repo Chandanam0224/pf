@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    background-color: white;
+    color: #0077cc;
+    border-radius: 4px;
+}
+
+.main {
+    padding: 50px 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #0077cc, #00c6ff);
+    color: white;
+}
+
+.intro h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.highlight {
+    color: #ffd700;
+    animation: pulse 2s infinite;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #0077cc;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #0077cc;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
